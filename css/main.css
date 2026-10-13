@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url("reset.css");
+
+body {
+  background: url("../images/bg0.jpg") no-repeat;
+  background-size: cover;
+}
+h1 {
+  font-size: 72px;
+  color: #1357af;
+}
+h2,
+h3 {
+  display: none;
+}
+h4 {
+  display: none;
+}
+.box {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 290px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #76df5b;
+}
+/* responsive */
+/* 1200px */
+@media (max-width: 1200px) {
+  body {
+    background: url("../images/bg0.jpg") no-repeat;
+  }
+}
+/* 1000px */
+@media (max-width: 1000px) {
+  body {
+    background: url("../images/bg1.jpg") no-repeat;
+  }
+}
+/* 768px */
+@media (max-width: 768px) {
+  body {
+    background: url("../images/bg2.jpg") no-repeat;
+  }
+
+  h2 {
+    display: block;
+  }
+}
+/* 390px */
+@media (max-width: 390px) {
+  body {
+    background: url("../images/bg3.jpg") no-repeat;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    display: none;
+  }
+  h3 {
+    display: block;
+  }
+  h4 {
+    display: block;
+  }
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import url("reset.css");
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  min-width: 300px;
+  margin: 50px auto;
+  padding: 3%;
+  background-color: #eee;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  background-color: #aaa;
+}
+.card-list li {
+  width: calc((100% - 50px) / 6);
+  padding: 3%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #000;
+}
+@media (max-width: 768px) {
+  .card-list li {
+    width: calc((100% - 30px) / 4);
+  }
+}
+@media (max-width: 480px) {
+  .card-list li {
+    width: calc(50% - 5px);
+    aspect-ratio: 1 / 0.6;
+  }
+}
+@media (max-width: 390px) {
+  .card-list li {
+    width: 100%;
+    aspect-ratio: 1 / 0.4;
+  }
+}
